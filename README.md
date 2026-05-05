@@ -7,6 +7,6 @@ contract SimpleVault {
     receive() external payable {} // Дозволяє приймати ETH
     function withdraw() external {
         require(msg.sender == owner, "Not owner");
-        payable(owner).transfer(address(this).balance);.11
+        payable(owner).transfer(address(this).balance);.12
     
 }
